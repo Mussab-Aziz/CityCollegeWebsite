@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SiteMaster.master.cs" Inherits="WebApplication1.SiteMaster" %>
+
+
+<!DOCTYPE html>
+<html>
+<head id="Head1" runat="server">
+    <title>College Portal</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header">
+            <img src="logo.png" alt="College Logo" class="logo" />
+            <h1>City Central College</h1>
+        </div>
+        <div class="navbar">
+            <a href="Home.aspx">Home</a>
+            <a href="Departments.aspx">Departments</a>
+            <a href="#">Faculty</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="main-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+        <div class="footer">
+            <p>College Rd, Pindi City, ISB State</p>
+            <p>Email: info@gmail.com | Phone: 123456</p>
+        </div>
+    </form>
+</body>
+</html>
